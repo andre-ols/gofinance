@@ -7,7 +7,7 @@ import {
 } from '@expo-google-fonts/poppins';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Dashboard } from './src/components/views/Dashboard';
+import { Register } from './src/components/views/Register';
 
 import theme from './src/global/styled/theme';
 
@@ -23,7 +23,7 @@ export default () => {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard />
+      <Register />
     </ThemeProvider>
   );
 };
