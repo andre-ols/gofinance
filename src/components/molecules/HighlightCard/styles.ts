@@ -9,7 +9,7 @@ export interface CardType {
 export const Container = styled.View<CardType>`
   background-color: ${(props) =>
     props.type === 'total' ? props.theme.colors.secondary : props.theme.colors.shape};
-  width: ${RFValue(300)}px;
+  width: ${RFValue(280)}px;
 
   border-radius: ${RFValue(5)}px;
 

@@ -6,6 +6,7 @@ import {
   Icon,
   Photo,
   Title,
+  TransactionList,
   Transactions,
   User,
   UserGreeting,
@@ -14,8 +15,48 @@ import {
   UserWrapper,
 } from './styles';
 import { HighLightCard } from '../../molecules/HighlightCard';
+import { TransactionCard, TransactionCardProps } from '../../molecules/TransactionCard';
+
+export interface DataListProps extends TransactionCardProps {
+  id: string;
+}
 
 export const Dashboard: FC = () => {
+  const array: DataListProps[] = [
+    {
+      amount: 'R$ 10,00',
+      date: '13/04/2022',
+      title: 'Desenvolvimento de site',
+      category: {
+        name: 'Vendas',
+        icon: 'dollar-sign',
+      },
+      type: 'positive',
+      id: '1',
+    },
+    {
+      amount: 'R$ 50,00',
+      date: '13/04/2022',
+      title: 'Carilas',
+      category: {
+        name: 'Alimentação',
+        icon: 'coffee',
+      },
+      type: 'negative',
+      id: '2',
+    },
+    {
+      amount: 'R$ 10,00',
+      date: '13/04/2022',
+      title: 'Desenvolvimento de site',
+      category: {
+        name: 'Vendas',
+        icon: 'dollar-sign',
+      },
+      type: 'negative',
+      id: '3',
+    },
+  ];
   return (
     <Container>
       <Header>
@@ -23,7 +64,7 @@ export const Dashboard: FC = () => {
           <UserInfo>
             <Photo
               source={{
-                uri: 'https://avatars2.githubusercontent.com/u/2254731?s=460&v=4',
+                uri: 'https://media-exp1.licdn.com/dms/image/C5603AQFnZ5ECKE8vNQ/profile-displayphoto-shrink_800_800/0/1614707358251?e=1665619200&v=beta&t=OgMsWf1ym_Z-rUt1ukHbNpvJFWysBDPhXlXPVHtRvmE',
               }}
             />
             <User>
@@ -36,14 +77,33 @@ export const Dashboard: FC = () => {
       </Header>
 
       <HighLightCards>
-        <HighLightCard amount="dasdsa" lastTransaction="dsadsadas" title="dasdsadsa" type="up" />
-        <HighLightCard amount="dasdsa" lastTransaction="dsadsadas" title="dasdsadsa" type="down" />
-
-        <HighLightCard amount="dasdsa" lastTransaction="dsadsadas" title="dasdsadsa" type="total" />
+        <HighLightCard
+          amount="R$ 150,00"
+          lastTransaction="Última entrada dia 13 de Abril"
+          title="Entradas"
+          type="up"
+        />
+        <HighLightCard
+          amount="R$ 150,00"
+          lastTransaction="Última entrada dia 13 de Abril"
+          title="Saídas"
+          type="down"
+        />
+        <HighLightCard
+          amount="R$ 150,00"
+          lastTransaction="Última entrada dia 13 de Abril"
+          title="Total"
+          type="total"
+        />
       </HighLightCards>
 
       <Transactions>
         <Title>LISTAGEM</Title>
+        <TransactionList
+          data={array}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <TransactionCard data={item} />}
+        />
       </Transactions>
     </Container>
   );
