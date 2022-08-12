@@ -10,7 +10,7 @@ export const Header = styled.View`
   background-color: ${(props) => props.theme.colors.primary};
 
   width: 100%;
-  height: ${RFValue(113)}px;
+  height: ${RFValue(110)}px;
   align-items: center;
   justify-content: flex-end;
 
@@ -30,3 +30,10 @@ export const Form = styled.View`
 `;
 
 export const Fields = styled.View``;
+
+export const TransactionTypes = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: ${RFValue(8)}px;
+  margin-bottom: 16px;
+`;

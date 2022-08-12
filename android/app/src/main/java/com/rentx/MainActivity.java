@@ -1,4 +1,5 @@
 package com.rentx;
+package com.swmansion.gesturehandler.react.example;
 
 import android.os.Build;
 import android.os.Bundle;
