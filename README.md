@@ -62,12 +62,6 @@ The following tools were used in building the project:
 
 ### Author
 
----
-
-<a href="https://www.linkedin.com/in/andr%C3%A9-oliveira-silva-3496a2106/">
- <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQFnZ5ECKE8vNQ/profile-displayphoto-shrink_800_800/0/1614707358251?e=1654732800&v=beta&t=yJ-wUUT6I8aRFfEWFANyAsojs4hOjdrViBuDSqWF0Ew" width="100px;" alt=""/><br />
-<sub><b>André Oliveira</b></sub></a> 
-<br />
 <br />
 
 [![Linkedin Badge](https://img.shields.io/badge/-André-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andr%C3%A9-oliveira-silva-3496a2106/)](https://www.linkedin.com/in/andr%C3%A9-oliveira-silva-3496a2106/)
