@@ -11,6 +11,7 @@ This is a personal finance application that seeks to help the user with their sp
 
 <h4 align="center"> 
 	🚧  Gofinance under construction...  🚧
+  <br/>
     The content of the application is in Portuguese
 </h4>
 
@@ -48,7 +49,7 @@ $ yarn start
 
 - To start the application, just type `yarn start` in the terminal/cmd.
 
-- Afterwards, read the terminal's QRCode to access the application.
+- Then scan the QR Code app from the terminal using Expo go App to access the app.
 
 ### 🛠 Technologies Used
 
