@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { FlatList } from 'react-native-gesture-handler';
+import { FlatList } from 'react-native';
 import { categories } from '../../../utils/categories';
 import { Button } from '../../molecules/Button';
 import { Category, Container, Footer, Header, Icon, Name, Separator, Title } from './styles';

@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "rentx",
-    "slug": "rentx",
+    "name": "gofinance",
+    "slug": "gofinance",
     "version": "1.0.0",
-    "scheme": "rentx",
+    "scheme": "gofinance",
     "assetBundlePatterns": [
       "**/*"
     ]

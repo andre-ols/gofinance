@@ -1,4 +1,6 @@
 /* eslint-disable camelcase */
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
 import {
   useFonts,
   Poppins_400Regular,
@@ -7,9 +9,9 @@ import {
 } from '@expo-google-fonts/poppins';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Register } from './src/components/views/Register';
-
+import { NavigationContainer } from '@react-navigation/native';
 import theme from './src/global/styled/theme';
+import { AppRoutes } from './src/externals/routes/app.routes';
 
 export default () => {
   const [fontsLoaded] = useFonts({
@@ -23,7 +25,9 @@ export default () => {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Register />
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 };

@@ -10,9 +10,11 @@ export const Container = styled.View`
   background-color: ${(props) => props.theme.colors.background};
 `;
 
-export const Icon = styled(Feather)`
-  font-size: ${RFValue(24)}px;
-  color: ${(props) => props.theme.colors.secondary};
+export const LoadContainer = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) => props.theme.colors.background};
 `;
 
 export const Header = styled.View`
@@ -23,6 +25,11 @@ export const Header = styled.View`
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
+`;
+
+export const Icon = styled(Feather)`
+  font-size: ${RFValue(24)}px;
+  color: ${(props) => props.theme.colors.secondary};
 `;
 
 export const UserWrapper = styled.View`

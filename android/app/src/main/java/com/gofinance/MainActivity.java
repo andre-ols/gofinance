@@ -1,5 +1,4 @@
-package com.rentx;
-package com.swmansion.gesturehandler.react.example;
+package com.gofinance;
 
 import android.os.Build;
 import android.os.Bundle;
