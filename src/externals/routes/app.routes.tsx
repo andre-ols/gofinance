@@ -4,6 +4,7 @@ import { Platform } from 'react-native';
 import { useTheme } from 'styled-components';
 import { Dashboard } from '../../components/views/Dashboard';
 import { Register } from '../../components/views/Register';
+import { Resume } from '../../components/views/Resume';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -47,7 +48,7 @@ export const AppRoutes = () => {
           ),
         }}
         name="Resumo"
-        component={Register}
+        component={Resume}
       />
     </Navigator>
   );

@@ -6,6 +6,9 @@
     "scheme": "gofinance",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "softwareKeyboardLayoutMode": "pan"
+    }
   }
 }

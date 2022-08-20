@@ -10,6 +10,7 @@ import {
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 import theme from './src/global/styled/theme';
 import { AppRoutes } from './src/externals/routes/app.routes';
 
@@ -26,6 +27,7 @@ export default () => {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
+        <StatusBar barStyle="light-content" />
         <AppRoutes />
       </NavigationContainer>
     </ThemeProvider>
