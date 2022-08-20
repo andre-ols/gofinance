@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "gofinance",
+    "slug": "gofinance",
+    "version": "1.0.0",
+    "scheme": "gofinance",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "softwareKeyboardLayoutMode": "pan"
+    }
+  }
+}
