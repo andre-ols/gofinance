@@ -1,7 +1,7 @@
 ![Badge](https://img.shields.io/static/v1?label=NodeJs&message=16.14.2&color=339933&logo=node.js&link=https://nodejs.org/en/)
 ![Badge](https://img.shields.io/static/v1?label=Yarn&message=1.22.15&color=2C8EBB&logo=yarn&link=https://yarnpkg.com/)
 ![badge](https://img.shields.io/static/v1?label=license&message=MIT&color)
-![badge](https://img.shields.io/github/last-commit/andre-ols/whatsapp_api_nodejs)
+![badge](https://img.shields.io/github/last-commit/andre-ols/gofinance)
 
 # Gofinance
 
